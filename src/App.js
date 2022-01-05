@@ -104,7 +104,7 @@ function App() {
               <FaLock />
             </button>
           </div>
-          <button className="btn" onClick={fetchPerson}>
+          <button className="btn" onClick={(fetchPerson, setTitle("name"))}>
             {loading ? "loading..." : "random user"}
           </button>
         </div>
