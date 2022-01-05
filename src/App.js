@@ -35,6 +35,7 @@ function App() {
 
         setPerson(randomPerson);
         setValue(randomPerson.name);
+        setTitle("name");
         setLoading(false);
       }
     } catch (error) {
@@ -104,7 +105,7 @@ function App() {
               <FaLock />
             </button>
           </div>
-          <button className="btn" onClick={(fetchPerson, setTitle("name"))}>
+          <button className="btn" onClick={fetchPerson}>
             {loading ? "loading..." : "random user"}
           </button>
         </div>
